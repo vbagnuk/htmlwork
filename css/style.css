@@ -1,0 +1,823 @@
+
+/*Navigation*/
+
+.navigation {
+    min-height: 70px;
+    border: 0;
+    border-radius: 0;
+    background-color: black;
+    opacity: 0.9;
+    box-shadow: none;
+}
+
+.navigation:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -moz-transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    z-index: -999;
+}
+
+.navigation.navbar-inverse:after {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.navigation .navbar-brand {
+    padding: 6px 15px;
+    height: 70px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.navigation .navbar-brand:hover,
+.navigation .navbar-brand:focus {
+    color: #fff;
+}
+
+.navigation .navbar-toggle {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-color: #4080ff;
+    border: 0;
+    background-color: #fff;
+}
+
+.navigation .navbar-toggle:hover,
+.navigation .navbar-toggle:focus {
+    background-color: #fff;
+}
+
+.navigation .navbar-toggle .icon-bar {
+    background-color: #4080ff;
+    height: 2px;
+}
+
+.navigation .navbar-nav > li > a {
+    color: #fff;
+    font-size: 13px;
+    padding: 25px 13px;
+    text-transform: uppercase;
+    margin: 0 2px;
+    font-weight: bold;
+    -moz-transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.navigation .navbar-nav > li > a:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #4080ff;
+    top: 0;
+    left: 0px;
+    -moz-transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+.navigation .navbar-nav > li > a:hover,
+.navigation .navbar-nav > li > a:focus {
+    color: #4080ff;
+}
+
+.navigation .navbar-nav > li > a:hover:before,
+.navigation .navbar-nav > li > a:focus:before {
+    width: 99%;
+}
+
+.navigation .navbar-nav > li.active > a {
+    background-color: transparent;
+    color: #4080ff;
+}
+
+.navigation .navbar-nav > li.active > a:before {
+    width: 100%;
+}
+
+.navigation .navbar-nav > li.active > a:focus,
+.navigation .navbar-nav > li.active > a:hover {
+    color: #4080ff;
+    background-color: transparent;
+}
+
+.navigation .navbar-nav > li.active > a:focus:before,
+.navigation .navbar-nav > li.active > a:hover:before {
+    width: 100%;
+}
+
+
+/*navigation end*/
+
+
+/*  hr- director*/
+
+header {
+    height: 100%;
+    overflow: hidden;
+}
+
+.section-table {
+    display: table;
+    width: 100%;
+    height: auto;
+}
+
+.section-row {
+    display: table-row;
+}
+
+.section-cell {
+    position: relative;
+    text-align: center;
+    display: table-cell;
+}
+
+.section-center {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.section-center .bg {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.section-center h2 {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.section-center h1 {
+    font-size: 40px;
+    letter-spacing: 12px;
+    color: #484848;
+    margin: 10px;
+}
+
+.section-center h1 span.clab {
+    color: #a1a9b0;
+    display: inline-block;
+}
+
+.section-center p {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-center .learn-more-btn {
+    background: rgba(61, 201, 179, 1);
+    padding: 20px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    box-shadow: 0px 3px 0px 0px #309383;
+    margin: 60px 0 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-center .learn-more-btn:hover,
+.section-center .learn-more-btn:focus {
+    background: rgba(61, 201, 179, 0.6);
+    color: #fff;
+}
+
+
+/**  video section **/
+
+.is_overlay {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#trailer {
+    width: 100%;
+    overflow: hidden;
+}
+
+#trailer > video {
+    width: 100%;
+    height: auto;
+}
+
+.bg {
+    padding: 10px 0px 5px 0px;
+    margin-bottom: 25px;
+}
+
+.bg>h1 {
+    color: #fff;
+    z-index: 5;
+}
+
+
+/*  hr- director end */
+
+
+/*Вам это знакомо*/
+
+.background-vam-znakomo {
+    background-color: #30a99e;
+    margin-top: -5px;
+    padding: 20px 0px 15px 0px;
+}
+
+.title-main-znakomo {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.polosa-main {
+    padding: 2px 0px 2px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.main-znakomo{
+    padding: 10px 15px 10px 15px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-top: 15px;
+}
+.title-znakomo{
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/*Вам это знакомо end*/
+
+
+/*Что Вы узнаете */
+
+.background-image-new {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/slide2.jpg);
+    color: white;
+}
+
+.background-image-new>.col-md-12>p {
+    font-size: 36px;
+    padding: 10px 0px 10px 0px;
+}
+
+.icons-new {
+    border: 1px solid #32C1FA;
+    margin-bottom: 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.icons-new:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.icons-new>p {
+    font-size: 45px;
+    color: orange;
+}
+
+.card-text-new {
+    font-size: 17px;
+    text-align: center;
+}
+
+.text-new-bottom {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px 5px 10px 5px;
+}
+
+.btn-buisness {
+    border-radius: 0px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+.modal-title{
+    color:  #2c3e50;
+}
+
+
+/*Что Вы узнаете end */
+
+
+/*Для кого подходит этот курс*/
+.section-title{
+    font-size: 36px;
+    color: #2c3e50;
+}
+.single-service i {
+    background: transparent;
+    border-radius: 50%;
+    color: #666;
+    display: inline-block;
+    font-size: 25px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+    border: 2px solid #666;
+}
+.single-service {
+    cursor: pointer;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+}
+.single-service:hover {
+    box-shadow: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.single-service > h4 {
+  color: #666;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.single-service.text-center > p {
+  color: #676767;
+  line-height: 27px;
+}
+.single-service:hover h4 {
+    color: #2c3e50;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.single-service:hover i {
+    background: #2c3e50;
+    border-color: #2c3e50;
+    color: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.btn-take-course{
+    border-radius: 0px;
+    background-color: #f44336;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*Для кого подходит этот курс end*/
+
+
+/*Как проходит курс-парктикум*/
+
+.promo-area,
+.ultimax-accordion {
+    margin-top: 30px;
+}
+.what-wedo_area {
+    background: rgba(0, 0, 0, 0) url("assets/img/bg/promo-bg.jpg") repeat scroll center center / cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+.what-wedo_area:after {
+    background: rgba(0, 0, 0, 0) url("assets/img/bg/dark_pattern.png") repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.promo-area > h2 {
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.promo-area > h2:after {
+    background: #ddd none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 80px;
+}
+.promo-icon > span i {
+    font-size: 20px;
+}
+.promo-icon > span {
+    background: transparent;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    color: #fff;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 60px;
+}
+.promo-content {
+    overflow: hidden;
+    padding-left: 15px;
+}
+.promo-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.single-promo {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.single-promo:last-child {
+  margin: 0;
+}
+.promo-content h4 {
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+.promo-content > p {
+    color: #fff;
+}
+.single-promo:hover .promo-icon > span {
+    background: #ff8a00;
+    border-color: #ff8a00;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.single-promo:hover .promo-content h4 {
+    color: #ff8a00;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.ultimax-accordion .panel-group {
+    margin-bottom: 0;
+}
+.ultimax-accordion .panel-default {
+    border: 0 none;
+}
+.panel-heading {
+    padding: 0;
+}
+h4.panel-title {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+.ultimax-accordion .panel {
+    background-color: transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+.ultimax-accordion .panel:last-of-type {
+    border-bottom: 0 none;
+}
+.ultimax-accordion .panel .panel-heading a {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    display: block;
+    padding: 12px 20px;
+}
+.ultimax-accordion .panel .panel-heading a.collapsed {
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    display: block;
+    padding: 12px 20px;
+}
+.ultimax-accordion .panel-default > .panel-heading {
+    border-radius: 0;
+}
+.ultimax-accordion .panel-group .panel-heading + .panel-collapse > .panel-body {
+    background: #fff none repeat scroll 0 0;
+    border-top: 0 none;
+    padding: 25px 30px 30px 70px;
+}
+.ultimax-accordion .panel .panel-heading a:before,
+.ultimax-accordion .panel .panel-heading a.collapsed:before {
+    background-color: #f1f1f1;
+    display: block;
+    float: left;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    height: 55px;
+    line-height: 48px;
+    margin-left: -21px;
+    margin-right: 20px;
+    margin-top: -13px;
+    text-align: center;
+    width: 55px;
+}
+.ultimax-accordion .panel .panel-heading.panel-icon a:before {
+    background: #ffbc13;
+    border: 1px solid #ffbc13;
+    color: #fff;
+    content: "ï‚‡";
+}
+.ultimax-accordion .panel .panel-heading.panel-icon a.collapsed:before {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border: 1px solid #f5f5f5;
+    color: #666;
+    content: "\f0a4";
+}
+.ultimax-accordion .panel .panel-heading.headphone a:before {
+    background: #ff5722;
+    border: 1px solid #ff5722;
+    color: #fff;
+    content: "ï€¥";
+}
+.ultimax-accordion .panel .panel-heading.headphone a.collapsed:before {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+}
+.ultimax-accordion .panel .panel-heading a:after,
+.ultimax-accordion .panel .panel-heading a.collapsed:after {
+    border-radius: 50%;
+    display: block;
+    float: right;
+    font-family: "FontAwesome";
+    font-size: 14px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    width: 25px;
+}
+.list-group-left>ul>li {
+    padding: 20px;
+    background-color: #209CF5;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.list-group-right>ul>li {
+    padding: 20px;
+    background-color: #209CF5;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-practikum {
+    border-radius: 0px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.modal-title-practicum {
+    color: grey;
+}
+
+
+/*Как проходит курс-парктикум end*/
+
+
+/*Олег Трякин*/
+
+.background-Trykin>.col-md-12>p {
+    font-size: 36px;
+    margin-top: 10px;
+    color: grey;
+}
+
+.background-Trykin {
+    background-color: #DAE3E6;
+}
+
+.list-skills {
+    margin-top: 20px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.skils>li {
+    padding: 15px;
+    border-bottom: 1px solid grey;
+    color: grey;
+}
+
+.video-trykin {
+    padding: 50px 0px 0px 15px;
+}
+
+.foto {
+    margin-bottom: 15px;
+}
+
+
+/*Олег Трякин end*/
+
+
+/*Выбрать цену*/
+
+.background-price {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/slide4.jpg);
+    color: white;
+    background-size: cover;
+}
+
+.text-price-head>h2 {
+    border-bottom: 2px solid orange;
+    color: white;
+    padding: 5px 0px 5px 0px;
+}
+
+.price-col1>h4 {
+    background-color: #209CF5;
+    padding: 5px;
+}
+
+.list-price>li {
+    padding: 10px;
+    border-bottom: 1px solid #209CF5;
+    background-color: #DAE3E6;
+    color: grey;
+}
+
+.pay>p {
+    padding: 5px;
+    background-color: orange;
+}
+
+.day>p {
+    background-color: #209CF5;
+    padding: 5px;
+}
+
+.pay2>p {
+    padding: 5px;
+    background-color: orange;
+}
+
+.price-col2>h4 {
+    background-color: orange;
+    padding: 5px;
+}
+
+.btn-course-price {
+    border-radius: 0px;
+    background-color: #209CF5;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+/*Выбрать цену end*/
+
+
+/*footer*/
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+
+/*footer end*/
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.politica>a {
+    background-color: black;
+}
+
+@media screen and (max-width: 480px) {
+    .background-vam-znakomo {
+    padding: 160px 0px 15px 0px;
+}
